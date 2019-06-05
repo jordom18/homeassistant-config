@@ -1,0 +1,155 @@
+##############################
+#  Office Switch Sensors     #
+##############################
+sensor.neq1662964_current:
+ friendly_name: Stromstärke
+sensor.neq1662964_energy_counter:
+ friendly_name: Energie
+sensor.neq1662964_frequency:
+ friendly_name: Frequenz
+sensor.neq1662964_power:
+ friendly_name: Leistung
+sensor.neq1662964_voltage:
+ friendly_name: Spannung
+
+#############################
+#   Bedroom Switch Sensors  #
+#############################
+sensor.neq1662965_current:
+ friendly_name: Stromstärke
+sensor.neq1662965_energy_counter:
+ friendly_name: Energie
+sensor.neq1662965_frequency:
+ friendly_name: Frequenz
+sensor.neq1662965_power:
+ friendly_name: Leistung
+sensor.neq1662965_voltage:
+ friendly_name: Spannung
+
+############################
+#    Linving Room Switch   #
+############################
+sensor.neq1662966_current:
+ friendly_name: Stromstärke
+sensor.neq1662966_energy_counter:
+ friendly_name: Energie
+sensor.neq1662966_frequency:
+ friendly_name: Frequenz
+sensor.neq1662966_power:
+ friendly_name: Leistung
+sensor.neq1662966_voltage:
+ friendly_name: Spannung
+
+###########################
+#      Office Heater      #
+###########################
+climate.meq0549436:
+ friendly_name: Büro Heizung
+ icon: mdi:thermostat
+
+###########################
+#    Living Room Heater   #
+###########################
+climate.meq0062485:
+ friendly_name: Wohnzimmer Heizung
+ icon: mdi:thermostat
+climate.meq0234023:
+ friendly_name: Wohnzimmer Thermostat
+ icon: mdi:thermostat-box
+sensor.meq0234023_humidity:
+ friendly_name: Luftfeuchtigkeit
+sensor.meq0234023_temperature:
+ friendly_name: Temperatur
+
+###########################
+#       Bath Heater       #
+###########################
+climate.neq0174723:
+ friendly_name: Bad Heizung
+ icon: mdi:thermostat
+
+###########################
+#      Kitchen Heater     #
+###########################
+climate.meq0551587:
+ friendly_name: Küche Heizung
+ icon: mdi:thermostat
+
+###########################
+#     Bedroom Heater      #
+###########################
+climate.oeq0145827:
+ friendly_name: Schlafzimmer Thermostat
+ icon: mdi:thermostat-box
+sensor.oeq0145827_humidity:
+ friendly_name: Luftfeuchtigkeit
+sensor.oeq0145827_temperature:
+ friendly_name: Temperatur
+climate.meq0544875:
+ friendly_name: Schlafzimmer Heizung
+ icon: mdi:thermostat
+
+###########################
+#      Window States      #
+########################### 
+binary_sensor.oeq0440321_state:
+ friendly_name: Fenster
+ icon: mdi:window-closed
+binary_sensor.oeq0805838_state:
+ friendly_name: Fenster
+ icon: mdi:window-closed
+
+###########################
+#   Homematic Switches    #
+###########################
+switch.neq1662964:
+ friendly_name: Büro Schalter
+ icon: mdi:power-socket-eu
+switch.neq1662966:
+ friendly_name: Wohnzimmer Schalter
+ icon: mdi:power-socket-eu
+switch.neq1662965:
+ friendly_name: Schlafzimmer Schalter
+ icon: mdi:power-socket-eu
+
+###########################
+#      Sonos Speaker      #
+###########################
+media_player.schlafzimmer:
+ friendly_name: Sonos Schlafzimmer
+ icon: mdi:speaker-wireless
+
+###########################
+#      Heater Valves      #
+###########################
+sensor.bath_heater_valve:
+ icon: mdi:camera-iris
+sensor.bed_room_heater_valve:
+ icon: mdi:camera-iris
+sensor.kitchen_heater_valve:
+ icon: mdi:camera-iris
+sensor.living_room_heater_valve:
+ icon: mdi:camera-iris
+sensor.office_heater_valve:
+ icon: mdi:camera-iris
+
+###########################
+#  OpenWeatherMap Sensors #
+###########################
+sensor.ruit_forecast_current:
+ friendly_name: Aktuelles Wetter
+sensor.ruit_forecast_temperature:
+ friendly_name: Temperatur
+sensor.ruit_forecast_temperature_max:
+ friendly_name: Höchsttemperatur
+sensor.ruit_forecast_temperature_min:
+ friendly_name: Mindesttemperatur
+sensor.ruit_forecast_visibility:
+ friendly_name: Sichtweite
+sensor.ruit_forecast_wind_speed:
+ friendly_name: Windgeschwindigkeit
+ icon: mdi:weather-windy
+sun.sun:
+ friendly_name: Sonnenstand
+sensor.moon:
+ friendly_name: Mond

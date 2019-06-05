@@ -1,0 +1,102 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: !secret home_latitude
+  longitude: !secret home_logitude
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: !secret home_elevation
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Europe/Berlin
+  # Customization file
+  customize: !include customize.yaml
+
+# Show links to resources in log and frontend
+#introduction:
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+http:
+  # Secrets are defined in the file secrets.yaml
+  # api_password: !secret http_password
+  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+  base_url: !secret base_url
+  use_x_forwarded_for: true
+  trusted_proxies: !secret trusted_proxies_ip
+
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time
+#history:
+
+# View all events in a logbook
+#logbook:
+
+# Enables a map showing the location of tracked devices
+map:
+
+# Track the sun in UI
+sun:
+
+weather:
+  - platform: openweathermap
+    api_key: !secret owm_api_key
+    name: !secret owm_name
+
+# Text to speech
+tts:
+  - platform: google_translate
+    service_name: google_say
+    language: 'de'
+    cache: true
+    time_memory: 300
+#    cache_dir: /tmp/tts
+
+# Cloud
+cloud:
+
+# iOS App
+ios:
+
+# Philips TV (not working yet)
+# media_player:
+#  - platform: philips_js
+#    host: !secret philips_js_host_ip
+
+homematic:
+  interfaces:
+    wireless:
+      host: !secret homematic_host_ip
+      port: !secret homematic_host_port
+
+sonos:
+  media_player:
+    hosts: !secret sonos_host_ip
+
+# Includes
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+sensor: !include_dir_merge_list includes/sensors/
+switch: !include_dir_merge_list includes/switches/
+scene: !include_dir_merge_list includes/scenes/
+homekit: !include includes/homekit/homekit.yaml

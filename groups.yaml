@@ -1,0 +1,170 @@
+myhome_view:
+ view: yes
+ name: Übersicht
+ entities:
+  - group.environment
+  - group.switches
+  - group.heaters
+  - media_player.schlafzimmer
+rooms_view:
+ view: yes
+ name: Räume
+ entities:
+  - group.living_room
+  - group.bedroom
+  - group.office
+  - group.bath_room
+  - group.kitchen
+air_quality_view:
+ view: yes
+ name: Luft
+ entities:
+  - group.air_quality_bedroom
+  - group.air_quality_living_room
+devices_view:
+ view: yes
+ name: Sensoren
+ entities:
+  - group.set_temp
+  - group.power_tv
+  - group.power_pc
+  - group.power_bed
+  - group.battery_living_room
+  - group.battery_bed_room
+  - group.battery_office
+  - group.battery_bath
+  - group.battery_kitchen
+  - group.fritzbox
+  - group.power_iphone
+  - group.power_ipad
+####GROUPS
+heaters:
+ name: Heizung
+ entities:
+  - climate.meq0234023
+  - climate.oeq0145827
+  - climate.meq0549436
+  - climate.neq0174723
+  - climate.meq0551587
+switches:
+ name: Schalter
+ entities:
+  - switch.neq1662966
+  - switch.neq1662964
+  - switch.neq1662965
+office:
+ name: Büro
+ entities:
+  - switch.neq1662964
+  - climate.meq0549436
+  - sensor.office_heater_valve
+living_room:
+ name: Wohnzimmer
+ entities:
+  - switch.neq1662966
+  - climate.meq0234023
+  - climate.meq0062485
+  - sensor.living_room_heater_valve
+  - binary_sensor.oeq0440321_state
+bath_room:
+ name: Bad
+ entities:
+  - climate.neq0174723
+  - sensor.bath_heater_valve
+kitchen:
+ name: Küche
+ entities:
+  - climate.meq0551587
+  - sensor.kitchen_heater_valve
+bedroom:
+ name: Schalfzimmer
+ entities:
+  - switch.neq1662965
+  - climate.oeq0145827
+  - climate.meq0544875
+  - sensor.bed_room_heater_valve
+  - binary_sensor.oeq0805838_state
+power_iphone:
+ name: iPhone X
+ entities:
+  - sensor.dominiciphone_battery_level
+  - sensor.dominiciphone_battery_state
+power_ipad:
+ name: iPad Air 2
+ entities:
+  - sensor.dominicipad_battery_level
+  - sensor.dominicipad_battery_state
+power_tv:
+ name: Strom Fernseher
+ entities:
+  - sensor.neq1662966_current
+  - sensor.neq1662966_power
+  - sensor.neq1662966_energy_counter
+  - sensor.neq1662966_frequency
+  - sensor.neq1662966_voltage
+power_pc:
+ name: Strom Computer
+ entities:
+  - sensor.neq1662964_current
+  - sensor.neq1662964_power
+  - sensor.neq1662964_energy_counter
+  - sensor.neq1662964_frequency
+  - sensor.neq1662964_voltage
+power_bed:
+ name: Strom Bett
+ entities:
+  - sensor.neq1662965_current
+  - sensor.neq1662965_power
+  - sensor.neq1662965_energy_counter
+  - sensor.neq1662965_frequency
+  - sensor.neq1662965_voltage
+air_quality_bedroom:
+ name: Schlafzimmer
+ entities:
+  - sensor.oeq0145827_temperature
+  - sensor.oeq0145827_humidity
+air_quality_living_room:
+ name: Wohnzimmer
+ entities:
+  - sensor.meq0234023_temperature
+  - sensor.meq0234023_humidity
+environment:
+ name: Umgebung
+ entities:
+  - sensor.openweather_temp
+  - sensor.openweather_wind
+  - weather.ruit_forecast
+  - sun.sun
+  - sensor.moon
+battery_living_room:
+ name: Batterie Wohnzimmer
+ entities:
+  - sensor.living_room_heater_battery
+  - sensor.living_room_thermostate_battery
+  - sensor.living_room_window_battery
+battery_bed_room:
+ name: Batterie Schlafzimmer
+ entities:
+  - sensor.bed_room_heater_battery
+  - sensor.bed_room_thermostate_battery
+  - sensor.bed_room_window_battery
+battery_office:
+ name: Batterie Büro
+ entities:
+  - sensor.office_heater_battery
+battery_bath:
+ name: Batterie Bad
+ entities:
+  - sensor.bath_heater_battery
+battery_kitchen:
+ name: Batterie Küche
+ entities:
+  - sensor.kitchen_heater_battery
+set_temp:
+ name: Eingestellte Temperaturen
+ entities:
+  - sensor.living_room_set_temp
+  - sensor.bed_room_set_temp
+  - sensor.office_set_temp
+  - sensor.bath_set_temp
+  - sensor.kitchen_set_temp

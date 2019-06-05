@@ -1,0 +1,18 @@
+filter:
+  include_domains:
+    - climate
+    - switch
+    - device_tracker
+  include_entities:
+    - media_player.schlafzimmer
+    - light.nachttischlampe
+    - light.wohnzimmer
+    - light.onoff_plug_1
+    - light.onoff_plug_1_2
+  exclude_entities:
+    - climate.meq0062485
+    - climate.meq0544875
+entity_config:
+  media_player.schlafzimmer:
+    feature_list:
+      - feature: play_pause

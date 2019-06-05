@@ -1,0 +1,71 @@
+living_room_view:
+ view: yes
+ name: Wohnzimmer
+ entities:
+  - group.living_room
+bedroom_view:
+ view: yes
+ name: Schlafzimmer
+ entities:
+  - group.bedroom
+  - media_player.schlafzimmer
+office_view:
+ view: yes
+ name: Büro
+ entities:
+  - group.office
+bath_room_view:
+ view: yes
+ name: Bad
+ entities:
+  - group.bath_room
+kitchen_view:
+ view: yes
+ name: Küche
+ entities:
+  - group.kitchen
+####GROUPS
+office:
+ name: Büro
+ entities:
+  - switch.neq1662964
+  - climate.meq0549436
+living_room:
+ name: Wohnzimmer
+ entities:
+  - switch.neq1662966
+  - climate.meq0234023
+  - climate.meq0062485
+  - binary_sensor.oeq0440321_state
+bath_room:
+ name: Bad
+ entities:
+  - climate.neq0174723
+kitchen:
+ name: Küche
+ entities:
+  - climate.meq0551587
+bedroom:
+ name: Schalfzimmer
+ entities:
+  - switch.neq1662965
+  - climate.oeq0145827
+  - climate.meq0544875
+  - binary_sensor.oeq0805838_state
+power_tv:
+ name: Strom Fernseher
+ entities:
+  - sensor.neq1662966_current
+  - sensor.neq1662966_power
+  - sensor.neq1662966_energy_counter
+  - sensor.neq1662966_frequency
+  - sensor.neq1662966_voltage
+power_pc:
+ name: Strom Computer
+ entities:
+  - sensor.neq1662964_current
+  - sensor.neq1662964_power
+  - sensor.neq1662964_energy_counter
+  - sensor.neq1662964_frequency
+  - sensor.neq1662964_voltage
+neq1662964

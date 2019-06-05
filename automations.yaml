@@ -1,0 +1,65 @@
+- id: '1533931777580'
+  alias: 0_leaving_home
+  trigger:
+  - entity_id: device_tracker.dominiciphone
+    from: home
+    platform: state
+    to: not_home
+  condition: []
+  action:
+  - alias: ''
+    data: {}
+    service: script.1534350553425
+- id: '1534167808220'
+  alias: 99_deley_test
+  trigger:
+  - event: start
+    platform: homeassistant
+  condition: []
+  action:
+  - delay: 00:00:30
+  - data:
+      message: Heimsteuerung hochgefahren.
+    service: tts.google_say
+- id: '1534438742026'
+  alias: 99_Script_Call_Test
+  trigger:
+  - entity_id: device_tracker.dominiciphone
+    from: home
+    platform: state
+    to: not_home
+  condition: []
+  action:
+  - service: script.1534438626592
+- id: '1543511293627'
+  alias: 0_asleep
+  trigger:
+  - entity_id: switch.flat_sleep_mode
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition: []
+  action:
+  - data: {}
+    service: script.1543599409972
+- id: '1543514600213'
+  alias: 0_awake
+  trigger:
+  - entity_id: switch.flat_sleep_mode
+    from: 'on'
+    platform: state
+    to: 'off'
+  condition: []
+  action:
+  - data: {}
+    service: script.1543599824025
+- id: '1547663485308'
+  alias: 0_coming_home
+  trigger:
+  - entity_id: device_tracker.dominiciphone
+    from: not_home
+    platform: state
+    to: home
+  condition: []
+  action:
+  - service: script.1535384325455

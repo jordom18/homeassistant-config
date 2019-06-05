@@ -1,0 +1,30 @@
+- platform: template
+  sensors:
+    living_room_heater_valve:
+      value_template: '{{ states.climate.meq0062485.attributes.valve }}'
+      unit_of_measurement: '%'
+      friendly_name: Ventilöffnung
+- platform: template
+  sensors:
+    bed_room_heater_valve:
+      value_template: '{{ states.climate.meq0544875.attributes.valve }}'
+      unit_of_measurement: '%'
+      friendly_name: Ventilöffnung
+- platform: template
+  sensors:
+    office_heater_valve:
+      value_template: '{{ states.climate.meq0549436.attributes.valve }}'
+      unit_of_measurement: '%'
+      friendly_name: Ventilöffnung
+- platform: template
+  sensors:
+    bath_heater_valve:
+      value_template: '{{ states.climate.neq0174723.attributes.valve }}'
+      unit_of_measurement: '%'
+      friendly_name: Ventilöffnung
+- platform: template
+  sensors:
+    kitchen_heater_valve:
+      value_template: '{{ states.climate.meq0551587.attributes.valve }}'
+      unit_of_measurement: '%'
+      friendly_name: Ventilöffnung

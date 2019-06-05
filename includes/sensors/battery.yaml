@@ -1,0 +1,193 @@
+# Battery states
+- platform: template
+  sensors:
+    living_room_heater_battery:
+      value_template: '{{ states.climate.meq0062485.attributes.battery }}'
+      unit_of_measurement: 'A'
+      friendly_name: Heizung
+      icon_template: >-
+        {% if is_state_attr('climate.meq0062485', 'battery', 2.9) %}
+          mdi:battery
+        {% elif is_state_attr('climate.meq0062485', 'battery', 2.8) %}
+          mdi:battery-90
+        {% elif is_state_attr('climate.meq0062485', 'battery', 2.7) %}
+          mdi:battery-80
+        {% elif is_state_attr('climate.meq0062485', 'battery', 2.6) %}
+          mdi:battery-70
+        {% elif is_state_attr('climate.meq0062485', 'battery', 2.5) %}
+          mdi:battery-40
+        {% elif is_state_attr('climate.meq0062485', 'battery', 2.4) %}
+          mdi:battery-30
+        {% elif is_state_attr('climate.meq0062485', 'battery', 2.3) %}
+          mdi:battery-charging-20
+        {% else %}
+          mdi:battery-unknown
+        {% endif %}
+- platform: template
+  sensors:
+    living_room_thermostate_battery:
+      value_template: '{{ states.climate.meq0234023.attributes.battery }}'
+      unit_of_measurement: 'A'
+      friendly_name: Thermostat
+      icon_template: >-
+        {% if is_state_attr('climate.meq0234023', 'battery', 2.9) %}
+          mdi:battery
+        {% elif is_state_attr('climate.meq0234023', 'battery', 2.8) %}
+          mdi:battery-90
+        {% elif is_state_attr('climate.meq0234023', 'battery', 2.7) %}
+          mdi:battery-80
+        {% elif is_state_attr('climate.meq0234023', 'battery', 2.6) %}
+          mdi:battery-70
+        {% elif is_state_attr('climate.meq0234023', 'battery', 2.5) %}
+          mdi:battery-40
+        {% elif is_state_attr('climate.meq0234023', 'battery', 2.4) %}
+          mdi:battery-30
+        {% elif is_state_attr('climate.meq0234023', 'battery', 2.3) %}
+          mdi:battery-charging-20
+        {% else %}
+          mdi:battery-unknown
+        {% endif %}
+- platform: template
+  sensors:
+    living_room_window_battery:
+      value_template: '{{ states.binary_sensor.oeq0440321_state.attributes.battery }}'
+      unit_of_measurement: 'Level'
+      friendly_name: Fenster
+      icon_template: >-
+        {% if is_state_attr('binary_sensor.oeq0440321_state', 'battery',  'High') %}
+          mdi:battery
+        {% else %}
+          mdi:battery-charging-20
+        {% endif %}
+- platform: template
+  sensors:
+    bed_room_heater_battery:
+      value_template: '{{ states.climate.meq0544875.attributes.battery }}'
+      unit_of_measurement: 'A'
+      friendly_name: Heizung
+      icon_template: >-
+        {% if is_state_attr('climate.meq0544875', 'battery', 2.9) %}
+          mdi:battery
+        {% elif is_state_attr('climate.meq0544875', 'battery', 2.8) %}
+          mdi:battery-90
+        {% elif is_state_attr('climate.meq0544875', 'battery', 2.7) %}
+          mdi:battery-80
+        {% elif is_state_attr('climate.meq0544875', 'battery', 2.6) %}
+          mdi:battery-70
+        {% elif is_state_attr('climate.meq0544875', 'battery', 2.5) %}
+          mdi:battery-40
+        {% elif is_state_attr('climate.meq0544875', 'battery', 2.4) %}
+          mdi:battery-30
+        {% elif is_state_attr('climate.meq0544875', 'battery', 2.3) %}
+          mdi:battery-charging-20
+        {% else %}
+          mdi:battery-unknown
+        {% endif %}
+- platform: template
+  sensors:
+    bed_room_thermostate_battery:
+      value_template: '{{ states.climate.oeq0145827.attributes.battery }}'
+      unit_of_measurement: 'A'
+      friendly_name: Thermostat
+      icon_template: >-
+        {% if is_state_attr('climate.oeq0145827', 'battery', 2.9) %}
+          mdi:battery
+        {% elif is_state_attr('climate.oeq0145827', 'battery', 2.8) %}
+          mdi:battery-90
+        {% elif is_state_attr('climate.oeq0145827', 'battery', 2.7) %}
+          mdi:battery-80
+        {% elif is_state_attr('climate.oeq0145827', 'battery', 2.6) %}
+          mdi:battery-70
+        {% elif is_state_attr('climate.oeq0145827', 'battery', 2.5) %}
+          mdi:battery-40
+        {% elif is_state_attr('climate.oeq0145827', 'battery', 2.4) %}
+          mdi:battery-30
+        {% elif is_state_attr('climate.oeq0145827', 'battery', 2.3) %}
+          mdi:battery-charging-20
+        {% else %}
+          mdi:battery-unknown
+        {% endif %}
+- platform: template
+  sensors:
+    bed_room_window_battery:
+      value_template: '{{ states.binary_sensor.oeq0805838_state.attributes.battery }}'
+      unit_of_measurement: 'Level'
+      friendly_name: Fenster
+      icon_template: >-
+        {% if is_state_attr('binary_sensor.oeq0805838_state', 'battery',  'High') %}
+          mdi:battery
+        {% else %}
+          mdi:battery-charging-20
+        {% endif %}
+- platform: template
+  sensors:
+    office_heater_battery:
+      value_template: '{{ states.climate.meq0549436.attributes.battery }}'
+      unit_of_measurement: 'A'
+      friendly_name: Heizung
+      icon_template: >-
+        {% if is_state_attr('climate.meq0549436', 'battery', 2.9) %}
+          mdi:battery
+        {% elif is_state_attr('climate.meq0549436', 'battery', 2.8) %}
+          mdi:battery-90
+        {% elif is_state_attr('climate.meq0549436', 'battery', 2.7) %}
+          mdi:battery-80
+        {% elif is_state_attr('climate.meq0549436', 'battery', 2.6) %}
+          mdi:battery-70
+        {% elif is_state_attr('climate.meq0549436', 'battery', 2.5) %}
+          mdi:battery-40
+        {% elif is_state_attr('climate.meq0549436', 'battery', 2.4) %}
+          mdi:battery-30
+        {% elif is_state_attr('climate.meq0549436', 'battery', 2.3) %}
+          mdi:battery-charging-20
+        {% else %}
+          mdi:battery-unknown
+        {% endif %}
+- platform: template
+  sensors:
+    bath_heater_battery:
+      value_template: '{{ states.climate.neq0174723.attributes.battery }}'
+      unit_of_measurement: 'A'
+      friendly_name: Heizung
+      icon_template: >-
+        {% if is_state_attr('climate.neq0174723', 'battery', 2.9) %}
+          mdi:battery
+        {% elif is_state_attr('climate.neq0174723', 'battery', 2.8) %}
+          mdi:battery-90
+        {% elif is_state_attr('climate.neq0174723', 'battery', 2.7) %}
+          mdi:battery-80
+        {% elif is_state_attr('climate.neq0174723', 'battery', 2.6) %}
+          mdi:battery-70
+        {% elif is_state_attr('climate.neq0174723', 'battery', 2.5) %}
+          mdi:battery-40
+        {% elif is_state_attr('climate.neq0174723', 'battery', 2.4) %}
+          mdi:battery-30
+        {% elif is_state_attr('climate.neq0174723', 'battery', 2.3) %}
+          mdi:battery-charging-20
+        {% else %}
+          mdi:battery-unknown
+        {% endif %}
+- platform: template
+  sensors:
+    kitchen_heater_battery:
+      value_template: '{{ states.climate.meq0551587.attributes.battery }}'
+      unit_of_measurement: 'A'
+      friendly_name: Heizung
+      icon_template: >-
+        {% if is_state_attr('climate.meq0551587', 'battery', 2.9) %}
+          mdi:battery
+        {% elif is_state_attr('climate.meq0551587', 'battery', 2.8) %}
+          mdi:battery-90
+        {% elif is_state_attr('climate.meq0551587', 'battery', 2.7) %}
+          mdi:battery-80
+        {% elif is_state_attr('climate.meq0551587', 'battery', 2.6) %}
+          mdi:battery-70
+        {% elif is_state_attr('climate.meq0551587', 'battery', 2.5) %}
+          mdi:battery-40
+        {% elif is_state_attr('climate.meq0551587', 'battery', 2.4) %}
+          mdi:battery-30
+        {% elif is_state_attr('climate.meq0551587', 'battery', 2.3) %}
+          mdi:battery-charging-20
+        {% else %}
+          mdi:battery-unknown
+        {% endif %}

@@ -1,0 +1,31 @@
+# Current temperature
+- platform: template
+  sensors:
+    living_room_set_temp:
+      value_template: '{{ states.climate.meq0234023.attributes.temperature }}'
+      unit_of_measurement: '°C'
+      friendly_name: Wohnzimmer
+- platform: template
+  sensors:
+    bed_room_set_temp:
+      value_template: '{{ states.climate.oeq0145827.attributes.temperature }}'
+      unit_of_measurement: '°C'
+      friendly_name: Schlafzimmer
+- platform: template
+  sensors:
+    office_set_temp:
+      value_template: '{{ states.climate.meq0549436.attributes.temperature }}'
+      unit_of_measurement: '°C'
+      friendly_name: Büro
+- platform: template
+  sensors:
+    bath_set_temp:
+      value_template: '{{ states.climate.neq0174723.attributes.temperature }}'
+      unit_of_measurement: '°C'
+      friendly_name: Bad
+- platform: template
+  sensors:
+    kitchen_set_temp:
+      value_template: '{{ states.climate.meq0551587.attributes.temperature }}'
+      unit_of_measurement: '°C'
+      friendly_name: Küche
