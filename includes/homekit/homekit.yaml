@@ -1,3 +1,6 @@
+###########################
+#  Homekit Configuration  #
+###########################
 filter:
   include_domains:
     - climate

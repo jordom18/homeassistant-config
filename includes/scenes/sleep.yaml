@@ -1,3 +1,7 @@
+###########################
+#  Scenes Configuration   #
+###########################
+# Scenes can be triggered by Switches or Automations.
 - name: Sleep
   entities:
     script.1543599409972:

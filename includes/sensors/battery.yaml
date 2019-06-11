@@ -1,4 +1,6 @@
-# Battery states
+###########################
+#    Living Room Heater   #
+###########################
 - platform: template
   sensors:
     living_room_heater_battery:
@@ -23,6 +25,10 @@
         {% else %}
           mdi:battery-unknown
         {% endif %}
+		
+###########################
+# Living Room Thermostat  #
+###########################
 - platform: template
   sensors:
     living_room_thermostate_battery:
@@ -47,6 +53,10 @@
         {% else %}
           mdi:battery-unknown
         {% endif %}
+		
+###########################
+#   Living Room Window    #
+###########################
 - platform: template
   sensors:
     living_room_window_battery:
@@ -59,6 +69,10 @@
         {% else %}
           mdi:battery-charging-20
         {% endif %}
+		
+###########################
+#     Bed Room Heater     #
+###########################
 - platform: template
   sensors:
     bed_room_heater_battery:
@@ -83,6 +97,10 @@
         {% else %}
           mdi:battery-unknown
         {% endif %}
+		
+###########################
+#   Bed Room Thermostat   #
+###########################
 - platform: template
   sensors:
     bed_room_thermostate_battery:
@@ -107,6 +125,10 @@
         {% else %}
           mdi:battery-unknown
         {% endif %}
+		
+###########################
+#     Bed Room Window     #
+###########################
 - platform: template
   sensors:
     bed_room_window_battery:
@@ -119,6 +141,10 @@
         {% else %}
           mdi:battery-charging-20
         {% endif %}
+		
+###########################
+#      Office Heater      #
+###########################
 - platform: template
   sensors:
     office_heater_battery:
@@ -143,6 +169,10 @@
         {% else %}
           mdi:battery-unknown
         {% endif %}
+		
+###########################
+#    Bath Room Heater     #
+###########################
 - platform: template
   sensors:
     bath_heater_battery:
@@ -167,6 +197,10 @@
         {% else %}
           mdi:battery-unknown
         {% endif %}
+		
+###########################
+#      Kitchen Heater     #
+###########################
 - platform: template
   sensors:
     kitchen_heater_battery:
