@@ -35,7 +35,6 @@
         {% else %}
           mdi:battery-unknown
         {% endif %}
-		
 ###########################
 # Living Room Thermostat  #
 ###########################
@@ -63,7 +62,6 @@
         {% else %}
           mdi:battery-unknown
         {% endif %}
-		
 ###########################
 #   Living Room Window    #
 ###########################
@@ -79,7 +77,6 @@
         {% else %}
           mdi:battery-charging-20
         {% endif %}
-		
 ###########################
 #     Bed Room Heater     # 
 ###########################
@@ -117,7 +114,6 @@
         {% else %}
           mdi:battery-unknown
         {% endif %}
-		
 ###########################
 #   Bed Room Thermostat   #
 ###########################
@@ -145,7 +141,6 @@
         {% else %}
           mdi:battery-unknown
         {% endif %}
-		
 ###########################
 #     Bed Room Window     #
 ###########################
@@ -161,7 +156,6 @@
         {% else %}
           mdi:battery-charging-20
         {% endif %}
-		
 ###########################
 #      Office Heater      # 
 ###########################
@@ -199,7 +193,6 @@
         {% else %}
           mdi:battery-unknown
         {% endif %}
-		
 ###########################
 #    Bath Room Heater     # 
 ###########################
@@ -237,7 +230,6 @@
         {% else %}
           mdi:battery-unknown
         {% endif %}
-		
 ###########################
 #      Kitchen Heater     # 
 ###########################
