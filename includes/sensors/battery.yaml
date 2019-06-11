@@ -8,20 +8,30 @@
       unit_of_measurement: 'A'
       friendly_name: Heizung
       icon_template: >-
-        {% if is_state_attr('climate.meq0062485', 'battery', 2.9) %}
+        {% if is_state_attr('climate.meq0062485', 'battery', 3.2) %}
           mdi:battery
-        {% elif is_state_attr('climate.meq0062485', 'battery', 2.8) %}
+        {% elif is_state_attr('climate.meq0062485', 'battery', 3.1) %}
           mdi:battery-90
-        {% elif is_state_attr('climate.meq0062485', 'battery', 2.7) %}
+        {% elif is_state_attr('climate.meq0062485', 'battery', 3.0) %}
           mdi:battery-80
-        {% elif is_state_attr('climate.meq0062485', 'battery', 2.6) %}
+        {% elif is_state_attr('climate.meq0062485', 'battery', 2.9) %}
           mdi:battery-70
-        {% elif is_state_attr('climate.meq0062485', 'battery', 2.5) %}
+        {% elif is_state_attr('climate.meq0062485', 'battery', 2.8) %}
+          mdi:battery-60
+        {% elif is_state_attr('climate.meq0062485', 'battery', 2.7) %}
+          mdi:battery-50		  
+        {% elif is_state_attr('climate.meq0062485', 'battery', 2.6) %}
           mdi:battery-40
-        {% elif is_state_attr('climate.meq0062485', 'battery', 2.4) %}
+        {% elif is_state_attr('climate.meq0062485', 'battery', 2.5) %}
           mdi:battery-30
+        {% elif is_state_attr('climate.meq0062485', 'battery', 2.4) %}
+          mdi:battery-20
         {% elif is_state_attr('climate.meq0062485', 'battery', 2.3) %}
           mdi:battery-charging-20
+        {% elif is_state_attr('climate.meq0062485', 'battery', 2.2) %}
+          mdi:battery-charging-10
+        {% elif is_state_attr('climate.meq0062485', 'battery', 2.1) %}
+          mdi:battery-charging-outline
         {% else %}
           mdi:battery-unknown
         {% endif %}
@@ -71,7 +81,7 @@
         {% endif %}
 		
 ###########################
-#     Bed Room Heater     #
+#     Bed Room Heater     # 
 ###########################
 - platform: template
   sensors:
@@ -80,20 +90,30 @@
       unit_of_measurement: 'A'
       friendly_name: Heizung
       icon_template: >-
-        {% if is_state_attr('climate.meq0544875', 'battery', 2.9) %}
+        {% if is_state_attr('climate.meq0544875', 'battery', 3.2) %}
           mdi:battery
-        {% elif is_state_attr('climate.meq0544875', 'battery', 2.8) %}
+        {% elif is_state_attr('climate.meq0544875', 'battery', 3.1) %}
           mdi:battery-90
-        {% elif is_state_attr('climate.meq0544875', 'battery', 2.7) %}
+        {% elif is_state_attr('climate.meq0544875', 'battery', 3.0) %}
           mdi:battery-80
-        {% elif is_state_attr('climate.meq0544875', 'battery', 2.6) %}
+        {% elif is_state_attr('climate.meq0544875', 'battery', 2.9) %}
           mdi:battery-70
-        {% elif is_state_attr('climate.meq0544875', 'battery', 2.5) %}
+        {% elif is_state_attr('climate.meq0544875', 'battery', 2.8) %}
+          mdi:battery-60
+        {% elif is_state_attr('climate.meq0544875', 'battery', 2.7) %}
+          mdi:battery-50		  
+        {% elif is_state_attr('climate.meq0544875', 'battery', 2.6) %}
           mdi:battery-40
-        {% elif is_state_attr('climate.meq0544875', 'battery', 2.4) %}
+        {% elif is_state_attr('climate.meq0544875', 'battery', 2.5) %}
           mdi:battery-30
+        {% elif is_state_attr('climate.meq0544875', 'battery', 2.4) %}
+          mdi:battery-20
         {% elif is_state_attr('climate.meq0544875', 'battery', 2.3) %}
           mdi:battery-charging-20
+        {% elif is_state_attr('climate.meq0544875', 'battery', 2.2) %}
+          mdi:battery-charging-10
+        {% elif is_state_attr('climate.meq0544875', 'battery', 2.1) %}
+          mdi:battery-charging-outline
         {% else %}
           mdi:battery-unknown
         {% endif %}
@@ -143,7 +163,7 @@
         {% endif %}
 		
 ###########################
-#      Office Heater      #
+#      Office Heater      # 
 ###########################
 - platform: template
   sensors:
@@ -152,26 +172,36 @@
       unit_of_measurement: 'A'
       friendly_name: Heizung
       icon_template: >-
-        {% if is_state_attr('climate.meq0549436', 'battery', 2.9) %}
+        {% if is_state_attr('climate.meq0549436', 'battery', 3.2) %}
           mdi:battery
-        {% elif is_state_attr('climate.meq0549436', 'battery', 2.8) %}
+        {% elif is_state_attr('climate.meq0549436', 'battery', 3.1) %}
           mdi:battery-90
-        {% elif is_state_attr('climate.meq0549436', 'battery', 2.7) %}
+        {% elif is_state_attr('climate.meq0549436', 'battery', 3.0) %}
           mdi:battery-80
-        {% elif is_state_attr('climate.meq0549436', 'battery', 2.6) %}
+        {% elif is_state_attr('climate.meq0549436', 'battery', 2.9) %}
           mdi:battery-70
-        {% elif is_state_attr('climate.meq0549436', 'battery', 2.5) %}
+        {% elif is_state_attr('climate.meq0549436', 'battery', 2.8) %}
+          mdi:battery-60
+        {% elif is_state_attr('climate.meq0549436', 'battery', 2.7) %}
+          mdi:battery-50		  
+        {% elif is_state_attr('climate.meq0549436', 'battery', 2.6) %}
           mdi:battery-40
-        {% elif is_state_attr('climate.meq0549436', 'battery', 2.4) %}
+        {% elif is_state_attr('climate.meq0549436', 'battery', 2.5) %}
           mdi:battery-30
+        {% elif is_state_attr('climate.meq0549436', 'battery', 2.4) %}
+          mdi:battery-20
         {% elif is_state_attr('climate.meq0549436', 'battery', 2.3) %}
           mdi:battery-charging-20
+        {% elif is_state_attr('climate.meq0549436', 'battery', 2.2) %}
+          mdi:battery-charging-10
+        {% elif is_state_attr('climate.meq0549436', 'battery', 2.1) %}
+          mdi:battery-charging-outline
         {% else %}
           mdi:battery-unknown
         {% endif %}
 		
 ###########################
-#    Bath Room Heater     #
+#    Bath Room Heater     # 
 ###########################
 - platform: template
   sensors:
@@ -180,26 +210,36 @@
       unit_of_measurement: 'A'
       friendly_name: Heizung
       icon_template: >-
-        {% if is_state_attr('climate.neq0174723', 'battery', 2.9) %}
+        {% if is_state_attr('climate.neq0174723', 'battery', 3.2) %}
           mdi:battery
-        {% elif is_state_attr('climate.neq0174723', 'battery', 2.8) %}
+        {% elif is_state_attr('climate.neq0174723', 'battery', 3.1) %}
           mdi:battery-90
-        {% elif is_state_attr('climate.neq0174723', 'battery', 2.7) %}
+        {% elif is_state_attr('climate.neq0174723', 'battery', 3.0) %}
           mdi:battery-80
-        {% elif is_state_attr('climate.neq0174723', 'battery', 2.6) %}
+        {% elif is_state_attr('climate.neq0174723', 'battery', 2.9) %}
           mdi:battery-70
-        {% elif is_state_attr('climate.neq0174723', 'battery', 2.5) %}
+        {% elif is_state_attr('climate.neq0174723', 'battery', 2.8) %}
+          mdi:battery-60
+        {% elif is_state_attr('climate.neq0174723', 'battery', 2.7) %}
+          mdi:battery-50		  
+        {% elif is_state_attr('climate.neq0174723', 'battery', 2.6) %}
           mdi:battery-40
-        {% elif is_state_attr('climate.neq0174723', 'battery', 2.4) %}
+        {% elif is_state_attr('climate.neq0174723', 'battery', 2.5) %}
           mdi:battery-30
+        {% elif is_state_attr('climate.neq0174723', 'battery', 2.4) %}
+          mdi:battery-20
         {% elif is_state_attr('climate.neq0174723', 'battery', 2.3) %}
           mdi:battery-charging-20
+        {% elif is_state_attr('climate.neq0174723', 'battery', 2.2) %}
+          mdi:battery-charging-10
+        {% elif is_state_attr('climate.neq0174723', 'battery', 2.1) %}
+          mdi:battery-charging-outline
         {% else %}
           mdi:battery-unknown
         {% endif %}
 		
 ###########################
-#      Kitchen Heater     #
+#      Kitchen Heater     # 
 ###########################
 - platform: template
   sensors:
@@ -208,20 +248,30 @@
       unit_of_measurement: 'A'
       friendly_name: Heizung
       icon_template: >-
-        {% if is_state_attr('climate.meq0551587', 'battery', 2.9) %}
+        {% if is_state_attr('climate.meq0551587', 'battery', 3.2) %}
           mdi:battery
-        {% elif is_state_attr('climate.meq0551587', 'battery', 2.8) %}
+        {% elif is_state_attr('climate.meq0551587', 'battery', 3.1) %}
           mdi:battery-90
-        {% elif is_state_attr('climate.meq0551587', 'battery', 2.7) %}
+        {% elif is_state_attr('climate.meq0551587', 'battery', 3.0) %}
           mdi:battery-80
-        {% elif is_state_attr('climate.meq0551587', 'battery', 2.6) %}
+        {% elif is_state_attr('climate.meq0551587', 'battery', 2.9) %}
           mdi:battery-70
-        {% elif is_state_attr('climate.meq0551587', 'battery', 2.5) %}
+        {% elif is_state_attr('climate.meq0551587', 'battery', 2.8) %}
+          mdi:battery-60
+        {% elif is_state_attr('climate.meq0551587', 'battery', 2.7) %}
+          mdi:battery-50		  
+        {% elif is_state_attr('climate.meq0551587', 'battery', 2.6) %}
           mdi:battery-40
-        {% elif is_state_attr('climate.meq0551587', 'battery', 2.4) %}
+        {% elif is_state_attr('climate.meq0551587', 'battery', 2.5) %}
           mdi:battery-30
+        {% elif is_state_attr('climate.meq0551587', 'battery', 2.4) %}
+          mdi:battery-20
         {% elif is_state_attr('climate.meq0551587', 'battery', 2.3) %}
           mdi:battery-charging-20
+        {% elif is_state_attr('climate.meq0551587', 'battery', 2.2) %}
+          mdi:battery-charging-10
+        {% elif is_state_attr('climate.meq0551587', 'battery', 2.1) %}
+          mdi:battery-charging-outline
         {% else %}
           mdi:battery-unknown
         {% endif %}
