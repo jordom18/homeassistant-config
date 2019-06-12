@@ -1,10 +1,15 @@
-# OpenWeather Sensors
+###########################
+#  Open Weather Map Temp  #
+###########################
 - platform: template
   sensors:
     openweather_temp:
       value_template: '{{ states.weather.ruit_forecast.attributes.temperature }}'
       unit_of_measurement: '°C'
       friendly_name: Temperatur Draußen
+###########################
+#  Open Weather Map Wind  #
+###########################
 - platform: template
   sensors:
     openweather_wind:

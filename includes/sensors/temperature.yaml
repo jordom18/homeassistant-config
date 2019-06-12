@@ -1,28 +1,42 @@
-# Current temperature
+###########################
+# Living Room Temperature #
+###########################
 - platform: template
   sensors:
     living_room_set_temp:
       value_template: '{{ states.climate.meq0234023.attributes.temperature }}'
       unit_of_measurement: '°C'
       friendly_name: Wohnzimmer
+###########################
+#  Bed Room Temperature   #
+###########################
 - platform: template
   sensors:
     bed_room_set_temp:
       value_template: '{{ states.climate.oeq0145827.attributes.temperature }}'
       unit_of_measurement: '°C'
       friendly_name: Schlafzimmer
+###########################
+#   Office Temperature    #
+###########################
 - platform: template
   sensors:
     office_set_temp:
       value_template: '{{ states.climate.meq0549436.attributes.temperature }}'
       unit_of_measurement: '°C'
       friendly_name: Büro
+###########################
+#    Bath  Temperature    #
+###########################
 - platform: template
   sensors:
     bath_set_temp:
       value_template: '{{ states.climate.neq0174723.attributes.temperature }}'
       unit_of_measurement: '°C'
       friendly_name: Bad
+###########################
+#   Kitchen Temperature   #
+###########################
 - platform: template
   sensors:
     kitchen_set_temp:

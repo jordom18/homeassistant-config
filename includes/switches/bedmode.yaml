@@ -2,7 +2,6 @@
   switches:
     bed_time_mode:
       friendly_name: "Bettzeit"
-#        value_template: "{{ is_state('device_tracker.dominiciphone', 'sleep') }}"
       value_template: "false"
       turn_on:
         service: homeassistant.turn_on

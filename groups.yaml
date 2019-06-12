@@ -1,3 +1,6 @@
+###########################
+#          Views          #
+###########################
 myhome_view:
  view: yes
  name: Übersicht
@@ -37,7 +40,9 @@ devices_view:
   - group.fritzbox
   - group.power_iphone
   - group.power_ipad
-####GROUPS
+###########################
+#          Groups         #
+###########################
 heaters:
  name: Heizung
  entities:
