@@ -78,9 +78,9 @@ tts:
 ios:
 
 # Philips TV (not working yet)
-# media_player:
-#  - platform: philips_js
-#    host: !secret philips_js_host_ip
+media_player:
+  - platform: philips_js
+    host: !secret philips_js_host_ip
 
 homematic:
   interfaces:
