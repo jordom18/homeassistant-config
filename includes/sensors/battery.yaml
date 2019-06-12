@@ -45,20 +45,26 @@
       unit_of_measurement: 'A'
       friendly_name: Thermostat
       icon_template: >-
-        {% if is_state_attr('climate.meq0234023', 'battery', 2.9) %}
+        {% if is_state_attr('climate.meq0234023', 'battery', 3.0) %}
           mdi:battery
-        {% elif is_state_attr('climate.meq0234023', 'battery', 2.8) %}
+        {% if is_state_attr('climate.meq0234023', 'battery', 2.9) %}
           mdi:battery-90
-        {% elif is_state_attr('climate.meq0234023', 'battery', 2.7) %}
+        {% if is_state_attr('climate.meq0234023', 'battery', 2.8) %}
           mdi:battery-80
-        {% elif is_state_attr('climate.meq0234023', 'battery', 2.6) %}
+        {% elif is_state_attr('climate.meq0234023', 'battery', 2.7) %}
           mdi:battery-70
+        {% elif is_state_attr('climate.meq0234023', 'battery', 2.6) %}
+          mdi:battery-60
         {% elif is_state_attr('climate.meq0234023', 'battery', 2.5) %}
-          mdi:battery-40
+          mdi:battery-50
         {% elif is_state_attr('climate.meq0234023', 'battery', 2.4) %}
-          mdi:battery-30
+          mdi:battery-40
         {% elif is_state_attr('climate.meq0234023', 'battery', 2.3) %}
+          mdi:battery-30
+        {% elif is_state_attr('climate.meq0234023', 'battery', 2.2) %}
           mdi:battery-charging-20
+        {% elif is_state_attr('climate.meq0234023', 'battery', 2.1) %}
+          mdi:battery-charging-outline
         {% else %}
           mdi:battery-unknown
         {% endif %}
@@ -124,20 +130,26 @@
       unit_of_measurement: 'A'
       friendly_name: Thermostat
       icon_template: >-
-        {% if is_state_attr('climate.oeq0145827', 'battery', 2.9) %}
+        {% if is_state_attr('climate.oeq0145827', 'battery', 3.0) %}
           mdi:battery
-        {% elif is_state_attr('climate.oeq0145827', 'battery', 2.8) %}
+        {% if is_state_attr('climate.oeq0145827', 'battery', 2.9) %}
           mdi:battery-90
-        {% elif is_state_attr('climate.oeq0145827', 'battery', 2.7) %}
+        {% if is_state_attr('climate.oeq0145827', 'battery', 2.8) %}
           mdi:battery-80
-        {% elif is_state_attr('climate.oeq0145827', 'battery', 2.6) %}
+        {% elif is_state_attr('climate.oeq0145827', 'battery', 2.7) %}
           mdi:battery-70
+        {% elif is_state_attr('climate.oeq0145827', 'battery', 2.6) %}
+          mdi:battery-60
         {% elif is_state_attr('climate.oeq0145827', 'battery', 2.5) %}
-          mdi:battery-40
+          mdi:battery-50
         {% elif is_state_attr('climate.oeq0145827', 'battery', 2.4) %}
-          mdi:battery-30
+          mdi:battery-40
         {% elif is_state_attr('climate.oeq0145827', 'battery', 2.3) %}
+          mdi:battery-30
+        {% elif is_state_attr('climate.oeq0145827', 'battery', 2.2) %}
           mdi:battery-charging-20
+        {% elif is_state_attr('climate.oeq0145827', 'battery', 2.1) %}
+          mdi:battery-charging-outline
         {% else %}
           mdi:battery-unknown
         {% endif %}
