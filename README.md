@@ -7,16 +7,16 @@ This is my Home Assistant configuration at the current state. It is not nearly f
 
 ## Hardware
 My Home Assistant configuration is running on a [Raspberry Pi 3 Model B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/). In the current state it delivers enough peformance to run my Home Automation. But I am sure this will not be enough for all time. Therefore I try to configurate my HA platform to be variable. It is my target to be able to easily switch from my Raspberry Pi to a more powerful machine in the future.
-To reach this target I try to run all software integrations in docker containers.
+To reach this target I try to run all software components in docker containers.
 
 ## Software
-As described above I am running Home Assistant on a Raspberry Pi 3. Therefore I use the standard Debian OS named [Raspbian](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/). For security reasons I also use a nginx instance as a reverse proxy with a SSL encryption. For that I used the [this tutorial](https://webcodr.io/2018/02/nginx-reverse-proxy-on-raspberry-pi-with-lets-encrypt/).
-A deskription of the three main components of my home automation follow in the next lines.
+As described above I am running Home Assistant on a Raspberry Pi 3. Therefore I use the standard Debian OS named [Raspbian](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/). For security reasons I also use a nginx instance as a reverse proxy with a SSL encryption. For that I used [this tutorial](https://webcodr.io/2018/02/nginx-reverse-proxy-on-raspberry-pi-with-lets-encrypt/).
+A description of the three main components of my home automation follows in the next lines.
 
 ### Docker
 [Docker](https://www.docker.com) is a container virtualization software. To get it to work on my Raspberry Pi I used [this](https://blog.alexellis.io/5-things-docker-rpi/) and [this](https://blog.alexellis.io/getting-started-with-docker-on-raspberry-pi/) blog posts by [Alex Ellis](https://blog.alexellis.io).
 Docker is easy to use and highly increases my flexibility. HA provides Docker containers for every new version. With that I am able to upadte to a new version within few minutes. I just download the new image, stop the old container and restart a new container with the new version.
-But even if I want to move to new hardware is very easy. Of course there are some network preconditions. After that even to move on a x86 architecture machine is done within a very short time.
+But even if I want to move to new hardware it is very easy. Of course there are some network preconditions. After that even to move on a x86 architecture machine is done within a very short time.
 Docker is very helpful in my use case and I do not want to miss it anymore.
 
 ### Home Gear
@@ -24,8 +24,8 @@ Since I use several Homematic devices I also need a interface to them. I do not 
 Home Gear runs in my configuration in a Docker container.
 
 ### Home Assistant
-The core of my home automation is [Home Assistant](https://www.home-assistant.io). It displays all information in a more or less clear way and helps me to write scripts and automations in YAML files. Currently I am using mostly the standard UI, but in the future I want to switch to Lovalace tabs. For now I realized some scripts and automations to help me controll my flat. For example I turn off every switch and all heaters when I leave my home. Also I automated some devices to live my morning rituals. 
-However, that is not all by far. I have many more ideas to realize in the future and I am sure HA will be usefull partner for that.
+The core of my home automation is [Home Assistant](https://www.home-assistant.io). It displays all information in a more or less clear way and helps me to write scripts and automations in YAML files. Currently I am using mostly the standard UI, but in the future I want to switch to Lovalace tabs. For now I realized some scripts and automations to help me control my flat. For example I turn off every switch and all heaters when I leave my home. Also I automated some devices to live my morning rituals. 
+However, that is not all by far. I have many more ideas to realize in the future and I am sure HA will be a usefull partner for that.
 Home Assistant runs in my configuration in a Docker container.
 
 ## HA Discoverys
@@ -36,7 +36,7 @@ I think this integrations discovered that I am using the iOS integration. With i
 
 ### Philips hue
 Some minutes after I connected the [Philips Hue](https://www2.meethue.com/en-us) hub to my network, HA automatically discovered it.
-Of course I use the Philips Hue integration to control some of my light bulbs. However, since the Philips Hue hub uses [Zigbee](https://www.zigbee.org) I am also able to use other Zigbee devices like [Osram plugs and lights](https://smartplus.ledvance.de/produkte/innenbeleuchtung/index.jsp)(german).
+Of course I use the Philips Hue integration to control my Philips LED bulbs. However, since the Philips Hue hub uses [Zigbee](https://www.zigbee.org) I am also able to use other Zigbee devices like [Osram plugs and lights](https://smartplus.ledvance.de/produkte/innenbeleuchtung/index.jsp)(german).
 I am a huge fan of light decoration. Therefore I will integrate more light devices by Philips and Osram in the future.
 
 ## HA Integrations
@@ -60,7 +60,7 @@ Sadly the [Philips TV](https://www.home-assistant.io/components/philips_js/) int
 The TV is connected to my network and JOINTspace is activated. I will re-try this one later.
 
 ### Sonos
-The [Sonos](https://www.home-assistant.io/components/sonos/) integration can control my Sonos speakers. I use it to start the radio with low volume as a alarm clock in the moring.
+The [Sonos](https://www.home-assistant.io/components/sonos/) integration can control my Sonos speakers. I use it to start the radio with low volume as a alarm clock in the morning.
 In the evening I use it for some calm down music before I go to sleep.
 The Sonos integration would also work with HA discovery.
 
@@ -74,6 +74,6 @@ In the future I plan to control my shutters with HA to close them on a high sun 
 
 ## Suggestions?
 First of all I want to thank [Adam](https://github.com/SilvrrGIT) for sharing his awesome [HA configuration](https://github.com/SilvrrGIT/HomeAssistant) on gitHub. I am still beginning my home automation journey and you are a huge inspiration.
-I can not invest as much time as I would like. But I am happy for every suggestion about my configuration. If there are any questions to my configuration I would to answer them in the [HA Forum](https://community.home-assistant.io). My user name is [Xargon](https://community.home-assistant.io/u/Xargon/activity).
+I can not invest as much time as I would like. But I am happy for every suggestion about my configuration. If there are any questions I would to answer them in the [HA Forum](https://community.home-assistant.io). My user name is [Xargon](https://community.home-assistant.io/u/Xargon/activity).
 While I work on my Home Assistant configuration I will also update this README file from time to time.
 Also I will add some pictures later.
