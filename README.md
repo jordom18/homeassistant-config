@@ -74,5 +74,6 @@ In the future I plan to control my shutters with HA to close them on a high sun 
 
 ## Suggestions?
 First of all I want to thank [Adam](https://github.com/SilvrrGIT) for sharing his awesome [HA configuration](https://github.com/SilvrrGIT/HomeAssistant) on gitHub. I am still beginning my home automation journey and you are a huge inspiration.
-I can not invest as much time as I would like. But I am happy for every suggestion about my configuration. If there are any questions to my configuration I would like to try to answer them in the [HA Forum](https://community.home-assistant.io). My user name is [Xargon](https://community.home-assistant.io/u/Xargon/activity).
+I can not invest as much time as I would like. But I am happy for every suggestion about my configuration. If there are any questions to my configuration I would to answer them in the [HA Forum](https://community.home-assistant.io). My user name is [Xargon](https://community.home-assistant.io/u/Xargon/activity).
 While I work on my Home Assistant configuration I will also update this README file from time to time.
+Also I will add some pictures later.
