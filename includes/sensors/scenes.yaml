@@ -15,7 +15,7 @@
     bed_time_state:
       value_template: off
       friendly_name: Bettzeit Szene
-	  
+
 ###########################
 #       Sleep State       #
 ###########################
