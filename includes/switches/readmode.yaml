@@ -16,10 +16,10 @@
         service: homeassistant.turn_on
         data:
           entity_id: scene.Read
-        service: device_tracker.see
-        data:
-          dev_id: dominicstate
-          location_name: 'read'
+#        service: device_tracker.see
+#        data:
+#          dev_id: dominicstate
+#          location_name: 'read'
       turn_off:
         service: homeassistant.turn_on
         data:

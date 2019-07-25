@@ -17,10 +17,10 @@
         service: homeassistant.turn_on
         data:
           entity_id: scene.Bedtime
-        service: device_tracker.see
-        data:
-          dev_id: dominicstate
-          location_name: 'bedtime'
+#        service: device_tracker.see
+#        data:
+#          dev_id: dominicstate
+#          location_name: 'bedtime'
       turn_off:
         service: homeassistant.turn_on
         data:
