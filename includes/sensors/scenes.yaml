@@ -4,7 +4,6 @@
 - platform: template
   sensors:
     reading_state:
-      value_template: off
       friendly_name: Lesen Szene
 
 ###########################
@@ -13,7 +12,6 @@
 - platform: template
   sensors:
     bed_time_state:
-      value_template: off
       friendly_name: Bettzeit Szene
 
 ###########################
@@ -22,5 +20,4 @@
 - platform: template
   sensors:
     sleep_state:
-      value_template: off
       friendly_name: Schlafen Szene
