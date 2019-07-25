@@ -27,6 +27,10 @@
         service: homeassistant.turn_on
         data:
           entity_id: scene.Awake
+        service: device_tracker.see
+        data:
+          dev_id: dominicstate
+          location_name: 'awake'
       icon_template: >-
         {% if is_state('scene.Sleep', 'on') %}
           mdi:sleep
