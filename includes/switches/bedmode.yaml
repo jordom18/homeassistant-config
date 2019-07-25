@@ -24,11 +24,7 @@
       turn_off:
         service: homeassistant.turn_on
         data:
-          entity_id: scene.Sleep
-        service: device_tracker.see
-        data:
-          dev_id: dominicstate
-          location_name: 'sleep'
+          entity_id: switch.flat_sleep_mode
       icon_template: >-
         {% if is_state('scene.Bedtime', 'on') %}
           mdi:bed-empty

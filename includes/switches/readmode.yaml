@@ -23,13 +23,9 @@
       turn_off:
         service: homeassistant.turn_on
         data:
-          entity_id: scene.Bedtime
-        service: device_tracker.see
-        data:
-          dev_id: dominicstate
-          location_name: 'bedtime'
+          entity_id: switch.bed_time_mode
       icon_template: >-
-        {% if is_state('scene.Bedtime', 'on') %}
+        {% if is_state('scene.Read', 'on') %}
           mdi:book-open-page-variant
         {% else %}
           mdi:book-outline
