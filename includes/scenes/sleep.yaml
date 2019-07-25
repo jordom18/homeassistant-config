@@ -14,3 +14,7 @@
   entities:
     script.1559588357737:
       state: true
+- name: Read
+  entities:
+    script.1564087373831:
+      state: true
