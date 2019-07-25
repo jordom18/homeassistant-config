@@ -9,7 +9,7 @@
 # 1. Turn on Bedtime mode.
 - platform: template
   switches:
-    bed_time_mode:
+    read_mode:
       friendly_name: "Lesen"
       value_template: "false"
       turn_on:
