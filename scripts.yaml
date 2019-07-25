@@ -341,3 +341,20 @@
     service: script.1559587755339
   - service: script.1559587613017
   - service: script.1559588189137
+'1564087158004':
+  alias: 1_call_light_on_read_in_bed
+  sequence:
+  - condition: state
+    entity_id: light.nachttischlampe
+    state: 'off'
+  - data:
+      brightness_pct: '70'
+      color_name: white
+      entity_id: light.nachttischlampe
+    service: light.turn_on
+'1564087373831':
+  alias: 0_call_start_read_in_bed_procedure
+  sequence:
+  - data: {}
+    service: script.1559587755339
+  - service: script.1564087158004
