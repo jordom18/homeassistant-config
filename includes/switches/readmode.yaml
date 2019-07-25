@@ -22,7 +22,7 @@
           entity_id: scene.Bedtime
       icon_template: >-
         {% if is_state('scene.Bedtime', 'on') %}
-          mdi:bed-empty
+          mdi:book-open-page-variant
         {% else %}
-          mdi:hotel
+          mdi:book-outline
         {% endif %}
