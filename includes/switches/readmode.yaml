@@ -23,7 +23,7 @@
       turn_off:
         service: homeassistant.turn_on
         data:
-          entity_id: switch.bed_time_mode
+          entity_id: scene.Bedtime
       icon_template: >-
         {% if is_state('scene.Read', 'on') %}
           mdi:book-open-page-variant

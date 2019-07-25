@@ -4,25 +4,25 @@
 # Scenes can be triggered by Switches or Automations.
 - name: Sleep
   entities:
-    device_tracker.dominicstate:
-      state: 'sleep'
     script.1543599409972:
+      state: true
+    script.1564097283047:
       state: true
 - name: Awake
   entities:
-    device_tracker.dominicstate:
-      state: 'awake'
     script.1543599824025:
+      state: true
+    script.1564097131874:
       state: true
 - name: Bedtime
   entities:
-    device_tracker.dominicstate:
-      state: 'bedtime'
     script.1559588357737:
+      state: true
+    script.1564097250017:
       state: true
 - name: Read
   entities:
-    device_tracker.dominicstate:
-      state: 'read'
     script.1564087373831:
+      state: true
+    script.1564097185811:
       state: true
