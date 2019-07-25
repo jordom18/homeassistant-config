@@ -358,3 +358,31 @@
   - data: {}
     service: script.1559587755339
   - service: script.1564087158004
+'1564097131874':
+  alias: 99_device_tracker_dominicstate_awake
+  sequence:
+  - data:
+      dev_id: dominicstate
+      location_name: awake
+    service: device_tracker.see
+'1564097185811':
+  alias: 99_device_tracker_dominicstate_read
+  sequence:
+  - data:
+      dev_id: dominicstate
+      location_name: read
+    service: device_tracker.see
+'1564097250017':
+  alias: 99_device_tracker_dominicstate_bedtime
+  sequence:
+  - data:
+      dev_id: dominicstate
+      location_name: bedtime
+    service: device_tracker.see
+'1564097283047':
+  alias: 99_device_tracker_dominicstate_sleep
+  sequence:
+  - data:
+      dev_id: dominicstate
+      location_name: awake
+    service: device_tracker.see
