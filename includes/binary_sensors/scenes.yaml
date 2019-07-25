@@ -5,6 +5,7 @@
   sensors:
     reading_state:
       friendly_name: Lesen Szene
+      value_template: off
 
 ###########################
 #      Bedtime State      #
@@ -13,6 +14,7 @@
   sensors:
     bed_time_state:
       friendly_name: Bettzeit Szene
+      value_template: off
 
 ###########################
 #       Sleep State       #
@@ -21,3 +23,4 @@
   sensors:
     sleep_state:
       friendly_name: Schlafen Szene
+      value_template: off
