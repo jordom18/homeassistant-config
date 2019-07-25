@@ -14,18 +14,16 @@
   switches:
     flat_sleep_mode:
       friendly_name: "Schlafmodus"
-      value_template: "false"
+      value_template: "{{ is_state('device_tracker.dominicstate', 'sleep') }}"
       turn_on:
-        service: homeassistant.turn_off
-        data:
-          entity_id: scene.Awake
         service: homeassistant.turn_on
         data:
           entity_id: scene.Sleep
-      turn_off:
-        service: homeassistant.turn_off
+        service: device_tracker.see
         data:
-          entity_id: scene.Sleep
+          dev_id: dominicstate
+          location_name: 'sleep'
+      turn_off:
         service: homeassistant.turn_on
         data:
           entity_id: scene.Awake

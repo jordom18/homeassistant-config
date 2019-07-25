@@ -12,11 +12,15 @@
   switches:
     bed_time_mode:
       friendly_name: "Bettzeit"
-      value_template: "false"
+      value_template: "{{ is_state('device_tracker.dominicstate', 'bedtime') }}"
       turn_on:
         service: homeassistant.turn_on
         data:
           entity_id: scene.Bedtime
+        service: device_tracker.see
+        data:
+          dev_id: dominicstate
+          location_name: 'bedtime'
       turn_off:
         service: homeassistant.turn_on
         data:

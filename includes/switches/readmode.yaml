@@ -11,11 +11,15 @@
   switches:
     read_mode:
       friendly_name: "Lesen"
-      value_template: "false"
+      value_template: "{{ is_state('device_tracker.dominicstate', 'read') }}"
       turn_on:
         service: homeassistant.turn_on
         data:
           entity_id: scene.Read
+        service: device_tracker.see
+        data:
+          dev_id: dominicstate
+          location_name: 'read'
       turn_off:
         service: homeassistant.turn_on
         data:
