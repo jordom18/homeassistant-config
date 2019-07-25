@@ -1,26 +1,25 @@
 ###########################
-#    Sleep Mode Switch    #
+#    Read Mode Switch     #
 ###########################
 # The Switch turns on/off the Bed Mode Automation.
 # Bed Mode ON performs the following steps:
 # 1. Turn on bed light.
-# 2. Turn on table light at the bed with bedtime light.
-# 3. Turn on radio with chilling music.
-# Sleep Mode OFF performs the following steps:
-# 1. Turn on sleep mode.
+# 2. Turn on table light at the bed with reading light.
+# Read Mode OFF performs the following steps:
+# 1. Turn on Bedtime mode.
 - platform: template
   switches:
     bed_time_mode:
-      friendly_name: "Bettzeit"
+      friendly_name: "Lesen"
       value_template: "false"
       turn_on:
         service: homeassistant.turn_on
         data:
-          entity_id: scene.Bedtime
+          entity_id: scene.Read
       turn_off:
         service: homeassistant.turn_on
         data:
-          entity_id: scene.Sleep
+          entity_id: scene.Bedtime
       icon_template: >-
         {% if is_state('scene.Bedtime', 'on') %}
           mdi:bed-empty
