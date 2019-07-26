@@ -12,7 +12,7 @@
   switches:
     bed_time_mode:
       friendly_name: "Bettzeit"
-      value_template: "{{ is_state('device_tracker.dominicstate', 'bedtime') }}"
+      value_template: "{{ is_state('device_tracker.bedroomstate', 'bedtime') }}"
       turn_on:
         service: homeassistant.turn_on
         data:
@@ -26,7 +26,7 @@
         data:
           entity_id: scene.Sleep
       icon_template: >-
-        {% if is_state('scene.Bedtime', 'on') %}
+        {% if is_state('device_tracker.bedroomstate', 'bedtime') %}
           mdi:bed-empty
         {% else %}
           mdi:hotel
