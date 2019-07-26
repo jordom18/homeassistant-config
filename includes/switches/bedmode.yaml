@@ -27,7 +27,7 @@
           entity_id: scene.Sleep
       icon_template: >-
         {% if is_state('device_tracker.bedroomstate', 'bedtime') %}
-          mdi:bed-empty
-        {% else %}
           mdi:hotel
+        {% else %}
+          mdi:bed-empty
         {% endif %}
