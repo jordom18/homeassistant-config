@@ -75,7 +75,7 @@ tts:
 #cloud:
 
 # iOS App
-ios:
+#ios:
 
 # Philips TV (not working yet)
 media_player:
