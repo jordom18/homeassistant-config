@@ -21,7 +21,7 @@
   sequence:
   - delay: 00:30:00
   - condition: state
-    entity_id: device_tracker.dominiciphone
+    entity_id: device_tracker.dominiciphone_2
     state: not_home
   - alias: ''
     data: {}
@@ -70,7 +70,7 @@
   sequence:
   - delay: 00:05:00
   - condition: state
-    entity_id: device_tracker.dominiciphone
+    entity_id: device_tracker.dominiciphone_2
     state: home
   - below: '12'
     condition: numeric_state

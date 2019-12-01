@@ -1,7 +1,7 @@
 - id: '1533931777580'
   alias: 0_leaving_home
   trigger:
-  - entity_id: device_tracker.dominiciphone
+  - entity_id: device_tracker.dominiciphone_2
     from: home
     platform: state
     to: not_home
@@ -56,7 +56,7 @@
 - id: '1547663485308'
   alias: 0_coming_home
   trigger:
-  - entity_id: device_tracker.dominiciphone
+  - entity_id: device_tracker.dominiciphone_2
     from: not_home
     platform: state
     to: home
