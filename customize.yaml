@@ -109,7 +109,7 @@ switch.neq1662966:
  friendly_name: Wohnzimmer Schalter
  icon: mdi:power-socket-eu
 switch.neq1662965:
- friendly_name: Schlafzimmer Schalter
+ friendly_name: Küche Schalter
  icon: mdi:power-socket-eu
 
 ###########################

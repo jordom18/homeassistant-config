@@ -23,33 +23,7 @@
   - condition: state
     entity_id: device_tracker.dominiciphone_2
     state: not_home
-  - alias: ''
-    data: {}
-    service: script.1534169403227
-  - delay: 00:00:05
-  - service: script.1534439318908
-  - delay: 00:00:05
-  - service: script.1534169164023
-  - delay: 00:00:05
-  - service: script.1535385048499
-  - delay: 00:00:05
-  - service: script.1539105525323
-  - delay: 00:00:05
-  - service: script.1539105681642
-  - delay: 00:00:05
-  - service: script.1539105813653
-  - delay: 00:00:05
-  - service: script.1539105931788
-  - delay: 00:00:05
-  - service: script.1540413313021
-  - delay: 00:00:05
-  - service: script.1540413535604
-  - delay: 00:00:05
-  - service: script.1540413662670
-  - delay: 00:00:05
-  - service: script.1540413799769
-  - delay: 00:00:05
-  - service: script.1540414074138
+  - scene: scene.not_home
 '1534438626592':
   alias: 99_Test_Script
   sequence:
@@ -72,12 +46,7 @@
   - condition: state
     entity_id: device_tracker.dominiciphone_2
     state: home
-  - below: '12'
-    condition: numeric_state
-    entity_id: sensor.openweather_temp
-  - service: script.1540491940141
-  - delay: 00:00:05
-  - service: script.1540492112963
+  - scene: scene.home
 '1535385048499':
   alias: 1_call_heater_turn_manual_livingroom
   sequence:
@@ -201,15 +170,11 @@
 '1543599409972':
   alias: 0_call_start_fall_asleep_procedure
   sequence:
-  - data: {}
-    service: script.1534169403227
-  - service: script.1549047142789
-  - data: {}
-    service: script.1543678179396
-  - delay: 00:00:05
-  - service: script.1534169164023
-  - delay: 00:00:05
-  - service: script.1534439318908
+  - scene: scene.sleep
+  - data:
+      dev_id: bedroomstate
+      location_name: sleep
+    service: device_tracker.see
 '1543599824025':
   alias: 0_call_start_awake_procedure
   sequence:
@@ -262,10 +227,10 @@
   - before: sunrise
     condition: sun
   - condition: state
-    entity_id: switch.neq1662965
+    entity_id: light.nachtlicht
     state: 'off'
   - data:
-      entity_id: switch.neq1662965
+      entity_id: light.nachtlicht
     service: switch.turn_on
 '1543663287295':
   alias: 1_call_switch_on_living_room

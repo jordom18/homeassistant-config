@@ -1,0 +1,124 @@
+- id: '1576004327343'
+  name: Bedtime
+  entities:
+    light.nachtlicht:
+      state: 'on'
+    light.nachttischlampe:
+      brightness: 92
+      color_temp: 500
+      effect: none
+      state: 'on'
+    media_player.schlafzimmer:
+      is_volume_muted: false
+      media_content_type: music
+      state: playing
+      volume_level: 0.1
+- id: '1576005400219'
+  name: Read
+  entities:
+    light.nachtlicht:
+      state: 'on'
+    light.nachttischlampe:
+      brightness: 131
+      color_temp: 330
+      effect: none
+      state: 'on'
+- id: '1576006668396'
+  name: Home
+  entities:
+    climate.meq0234023:
+      preset_mode:
+      state: auto
+    climate.oeq0145827:
+      preset_mode:
+      state: auto
+- id: '1576007128955'
+  name: Not Home
+  entities:
+    climate.meq0234023:
+      preset_mode: eco
+      state: heat
+    climate.meq0549436:
+      preset_mode: eco
+      state: heat
+    climate.meq0551587:
+      preset_mode: eco
+      state: heat
+    climate.neq0174723:
+      preset_mode: eco
+      state: heat
+    climate.oeq0145827:
+      preset_mode: eco
+      state: heat
+    light.duftspender:
+      state: 'off'
+    light.fernsehlicht_1:
+      state: 'off'
+    light.fernsehlicht_2:
+      state: 'off'
+    light.nachtlicht:
+      state: 'off'
+    light.nachttischlampe:
+      state: 'off'
+    media_player.schlafzimmer:
+      is_volume_muted: false
+      media_content_type: music
+      state: paused
+      volume_level: 0.13
+    switch.neq1662964:
+      state: 'off'
+    switch.neq1662965:
+      state: 'off'
+    switch.neq1662966:
+      state: 'off'
+- id: '1576007839210'
+  name: Sleep
+  entities:
+    light.fernsehlicht_1:
+      state: 'off'
+    light.fernsehlicht_2:
+      state: 'off'
+    light.nachtlicht:
+      state: 'off'
+    light.nachttischlampe:
+      state: 'off'
+    media_player.schlafzimmer:
+      is_volume_muted: false
+      media_content_type: music
+      state: playing
+      volume_level: 0.1
+    switch.neq1662964:
+      state: 'off'
+    switch.neq1662965:
+      state: 'off'
+    switch.neq1662966:
+      state: 'off'
+- id: '1576695578557'
+  name: Away
+  entities:
+    climate.meq0234023:
+      battery: 2.5
+      current_humidity: 54
+      current_temperature: 20.3
+      friendly_name: Wohnzimmer Thermostat
+      hvac_modes:
+      - auto
+      - heat
+      - 'off'
+      icon: mdi:thermostat-box
+      id: MEQ0234023
+      interface: wireless
+      max_temp: 30.5
+      min_temp: 4.5
+      mode: Manual
+      preset_mode:
+      preset_modes:
+      - boost
+      - comfort
+      - eco
+      rssi_device: -65
+      rssi_peer: 0
+      state: heat
+      supported_features: 17
+      target_temp_step: 0.5
+      temperature: 17
