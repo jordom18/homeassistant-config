@@ -116,7 +116,7 @@ power_pc:
   - sensor.neq1662964_frequency
   - sensor.neq1662964_voltage
 power_bed:
- name: Strom Bett
+ name: Strom Küche
  entities:
   - sensor.neq1662965_current
   - sensor.neq1662965_power

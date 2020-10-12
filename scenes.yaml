@@ -1,1 +1,291 @@
-[]
+- id: '1602417943185'
+  name: Home
+  entities:
+    climate.meq0234023:
+      hvac_modes:
+      - auto
+      - heat
+      - 'off'
+      min_temp: 4.5
+      max_temp: 30.5
+      target_temp_step: 0.5
+      preset_modes:
+      - boost
+      - comfort
+      - eco
+      current_temperature: 21
+      temperature: 22
+      current_humidity: 54
+      preset_mode:
+      battery: 2.5
+      rssi_peer: 0
+      rssi_device: -73
+      mode: Auto
+      id: MEQ0234023
+      interface: wireless
+      friendly_name: Wohnzimmer Thermostat
+      supported_features: 17
+      icon: mdi:thermostat-box
+      state: auto
+    climate.oeq0145827:
+      hvac_modes:
+      - auto
+      - heat
+      - 'off'
+      min_temp: 4.5
+      max_temp: 30.5
+      target_temp_step: 0.5
+      preset_modes:
+      - boost
+      - comfort
+      - eco
+      current_temperature: 20.7
+      temperature: 21
+      current_humidity: 55
+      preset_mode:
+      battery: 2.5
+      rssi_peer: 0
+      rssi_device: -69
+      mode: Auto
+      id: OEQ0145827
+      interface: wireless
+      friendly_name: Schlafzimmer Thermostat
+      supported_features: 17
+      icon: mdi:thermostat-box
+      state: auto
+  icon: mdi:home
+- id: '1602419914389'
+  name: Away
+  entities:
+    climate.meq0234023:
+      hvac_modes:
+      - auto
+      - heat
+      - 'off'
+      min_temp: 4.5
+      max_temp: 30.5
+      target_temp_step: 0.5
+      preset_modes:
+      - boost
+      - comfort
+      - eco
+      current_temperature: 21.1
+      temperature: 17
+      current_humidity: 55
+      preset_mode:
+      battery: 2.5
+      rssi_peer: 0
+      rssi_device: -74
+      mode: Manual
+      id: MEQ0234023
+      interface: wireless
+      friendly_name: Wohnzimmer Thermostat
+      supported_features: 17
+      icon: mdi:thermostat-box
+      state: heat
+    climate.meq0549398:
+      hvac_modes:
+      - auto
+      - heat
+      - 'off'
+      min_temp: 4.5
+      max_temp: 30.5
+      target_temp_step: 0.5
+      preset_modes:
+      - boost
+      - comfort
+      - eco
+      current_temperature: 19
+      temperature: 17
+      preset_mode:
+      battery: 2.7
+      rssi_peer: 0
+      valve: 0
+      mode: Manual
+      id: MEQ0549398
+      interface: wireless
+      friendly_name: MEQ0549398
+      supported_features: 17
+      state: heat
+    climate.meq0549436:
+      hvac_modes:
+      - auto
+      - heat
+      - 'off'
+      min_temp: 4.5
+      max_temp: 30.5
+      target_temp_step: 0.5
+      preset_modes:
+      - boost
+      - comfort
+      - eco
+      current_temperature: 20.2
+      temperature: 17
+      preset_mode:
+      battery: 2.5
+      rssi_peer: 0
+      valve: 0
+      mode: Manual
+      id: MEQ0549436
+      interface: wireless
+      friendly_name: Büro Heizung
+      supported_features: 17
+      icon: mdi:thermostat
+      state: heat
+    climate.meq0551587:
+      hvac_modes:
+      - auto
+      - heat
+      - 'off'
+      min_temp: 4.5
+      max_temp: 30.5
+      target_temp_step: 0.5
+      preset_modes:
+      - boost
+      - comfort
+      - eco
+      current_temperature: 19.3
+      temperature: 17
+      preset_mode:
+      battery: 2.5
+      rssi_peer: 0
+      valve: 0
+      mode: Manual
+      id: MEQ0551587
+      interface: wireless
+      friendly_name: Küche Heizung
+      supported_features: 17
+      icon: mdi:thermostat
+      state: heat
+    climate.meq0575050:
+      hvac_modes:
+      - auto
+      - heat
+      - 'off'
+      min_temp: 4.5
+      max_temp: 30.5
+      target_temp_step: 0.5
+      preset_modes:
+      - boost
+      - comfort
+      - eco
+      current_temperature: 19.9
+      temperature: 17
+      preset_mode:
+      battery: 2.6
+      rssi_peer: 0
+      valve: 0
+      mode: Manual
+      id: MEQ0575050
+      interface: wireless
+      friendly_name: MEQ0575050
+      supported_features: 17
+      state: heat
+    climate.neq0174723:
+      hvac_modes:
+      - auto
+      - heat
+      - 'off'
+      min_temp: 4.5
+      max_temp: 30.5
+      target_temp_step: 0.5
+      preset_modes:
+      - boost
+      - comfort
+      - eco
+      current_temperature: 18.4
+      temperature: 17
+      preset_mode:
+      battery: 2.5
+      rssi_peer: 0
+      valve: 0
+      mode: Manual
+      id: NEQ0174723
+      interface: wireless
+      friendly_name: Bad Heizung
+      supported_features: 17
+      icon: mdi:thermostat
+      state: heat
+    climate.oeq0145827:
+      hvac_modes:
+      - auto
+      - heat
+      - 'off'
+      min_temp: 4.5
+      max_temp: 30.5
+      target_temp_step: 0.5
+      preset_modes:
+      - boost
+      - comfort
+      - eco
+      current_temperature: 20.8
+      temperature: 21
+      current_humidity: 56
+      preset_mode:
+      battery: 2.5
+      rssi_peer: 0
+      rssi_device: -76
+      mode: Auto
+      id: OEQ0145827
+      interface: wireless
+      friendly_name: Schlafzimmer Thermostat
+      supported_features: 17
+      icon: mdi:thermostat-box
+      state: auto
+    light.schlafzimmer:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      - random
+      is_hue_group: true
+      friendly_name: Schlafzimmer
+      supported_features: 63
+      state: 'off'
+    light.wohnzimmer:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      - random
+      is_hue_group: true
+      friendly_name: Wohnzimmer
+      supported_features: 63
+      state: 'off'
+    switch.neq1662965:
+      today_energy_kwh: 0.042
+      rssi_peer: 0
+      power: 0.23
+      current: 7
+      voltage: 234.1
+      working: 'No'
+      id: NEQ1662965
+      interface: wireless
+      friendly_name: Küche Schalter
+      icon: mdi:power-socket-eu
+      state: 'off'
+    switch.neq1662966:
+      today_energy_kwh: 0.2533
+      rssi_peer: 0
+      power: 0.6
+      current: 17
+      voltage: 237
+      working: 'No'
+      id: NEQ1662966
+      interface: wireless
+      friendly_name: Wohnzimmer Schalter
+      icon: mdi:power-socket-eu
+      state: 'off'
+    switch.neq1662964:
+      today_energy_kwh: 1.5527
+      rssi_peer: 0
+      power: 0
+      current: 0
+      voltage: 234.1
+      working: 'No'
+      id: NEQ1662964
+      interface: wireless
+      friendly_name: Büro Schalter
+      icon: mdi:power-socket-eu
+      state: 'off'
+  icon: mdi:home-minus

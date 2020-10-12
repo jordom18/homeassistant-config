@@ -5,6 +5,7 @@ filter:
   include_domains:
     - climate
     - switch
+    - scene
 #    - device_tracker
   include_entities:
 #    - media_player.schlafzimmer
