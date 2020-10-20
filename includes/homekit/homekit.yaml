@@ -5,11 +5,11 @@ filter:
   include_domains:
     - climate
     - switch
-    - scene
+#    - scene
 #    - device_tracker
   include_entities:
 #    - media_player.schlafzimmer
-    - light.nachttischlampe
+    - light.schlafzimmer
     - light.wohnzimmer
     - light.onoff_plug_1
     - light.onoff_plug_1_2
