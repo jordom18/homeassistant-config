@@ -1,1 +1,36 @@
-{}
+turn_off_kitchen_switch_if_inactive:
+  alias: Turn off kitchen switch if inactive
+  sequence:
+  - condition: numeric_state
+    entity_id: sensor.neq1662965_current
+    attribute: current
+    below: '8'
+    above: '1'
+  - service: switch.turn_off
+    data: {}
+    entity_id: switch.neq1662965
+  mode: single
+turn_off_living_room_switch_if_inactive:
+  alias: Turn off living room switch if inactive
+  sequence:
+  - condition: numeric_state
+    entity_id: sensor.neq1662966_current
+    attribute: current
+    below: '100'
+    above: '1'
+  - service: switch.turn_off
+    data: {}
+    entity_id: switch.neq1662966
+  mode: single
+turn_off_office_switch_if_inactive:
+  alias: Turn off office switch if inactive
+  sequence:
+  - condition: numeric_state
+    entity_id: sensor.neq1662964_current
+    attribute: current
+    below: '200'
+    above: '1'
+  - service: switch.turn_off
+    data: {}
+    entity_id: switch.neq1662964
+  mode: single

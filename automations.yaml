@@ -19,3 +19,39 @@
   condition: []
   action:
   - service: script.1534438626592
+- id: '1606162668106'
+  alias: Inactivate living room switch by inactivity
+  description: Inactivate switch in the living room, when inactive.
+  trigger:
+  - platform: time_pattern
+    minutes: /28
+  condition: []
+  action:
+  - service: script.turn_off_living_room_switch_if_inactive
+    data: {}
+    entity_id: switch.neq1662966
+  mode: single
+- id: '1606163058397'
+  alias: Inactivate office switch by inactivity
+  description: Inactivates the office switch, when inactive.
+  trigger:
+  - platform: time_pattern
+    minutes: /29
+  condition: []
+  action:
+  - service: script.turn_off_office_switch_if_inactive
+    data: {}
+    entity_id: switch.neq1662964
+  mode: single
+- id: '1606163996577'
+  alias: Inactivate kitchen switch by inactivity
+  description: Inactivate kitchen switch, when inactive.
+  trigger:
+  - platform: time_pattern
+    minutes: /27
+  condition: []
+  action:
+  - service: script.turn_off_kitchen_switch_if_inactive
+    data: {}
+    entity_id: switch.neq1662965
+  mode: single
