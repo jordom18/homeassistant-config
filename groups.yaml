@@ -89,16 +89,6 @@ bedroom:
   - climate.meq0544875
   - sensor.bed_room_heater_valve
   - binary_sensor.oeq0805838_state
-power_iphone:
- name: iPhone X
- entities:
-  - sensor.dominiciphone_battery_level
-  - sensor.dominiciphone_battery_state
-power_ipad:
- name: iPad Air 2
- entities:
-  - sensor.dominicipad_battery_level
-  - sensor.dominicipad_battery_state
 power_tv:
  name: Strom Fernseher
  entities:

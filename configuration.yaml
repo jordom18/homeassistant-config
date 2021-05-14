@@ -57,10 +57,10 @@ map:
 # Track the sun in UI
 sun:
 
-weather:
-  - platform: openweathermap
-    api_key: !secret owm_api_key
-    name: !secret owm_name
+#weather:
+#  - platform: openweathermap
+#    api_key: !secret owm_api_key
+#    name: !secret owm_name
 
 # Text to speech
 tts:
@@ -81,9 +81,9 @@ tts:
 mobile_app:
 
 # Philips TV (not working yet)
-media_player:
-  - platform: philips_js
-    host: !secret philips_js_host_ip
+#media_player:
+#  - platform: philips_js
+#    host: !secret philips_js_host_ip
 
 homematic:
   interfaces:
