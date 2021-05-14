@@ -115,8 +115,8 @@ switch.neq1662965:
 ###########################
 #      Sonos Speaker      #
 ###########################
-media_player.schlafzimmer:
- friendly_name: Sonos Schlafzimmer
+media_player.buero:
+ friendly_name: Sonos Büro
  icon: mdi:speaker-wireless
 
 ###########################

@@ -5,10 +5,9 @@ myhome_view:
  view: yes
  name: Übersicht
  entities:
-  - group.environment
   - group.switches
   - group.heaters
-  - media_player.schlafzimmer
+  - media_player.buero
 rooms_view:
  view: yes
  name: Räume
@@ -37,9 +36,6 @@ devices_view:
   - group.battery_office
   - group.battery_bath
   - group.battery_kitchen
-  - group.fritzbox
-  - group.power_iphone
-  - group.power_ipad
 ###########################
 #          Groups         #
 ###########################
@@ -123,14 +119,6 @@ air_quality_living_room:
  entities:
   - sensor.meq0234023_temperature
   - sensor.meq0234023_humidity
-environment:
- name: Umgebung
- entities:
-  - sensor.openweather_temp
-  - sensor.openweather_wind
-  - weather.ruit_forecast
-  - sun.sun
-  - sensor.moon
 battery_living_room:
  name: Batterie Wohnzimmer
  entities:

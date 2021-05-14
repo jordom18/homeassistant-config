@@ -26,7 +26,7 @@ http:
   # Secrets are defined in the file secrets.yaml
   # api_password: !secret http_password
   # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
-  base_url: !secret base_url
+  # base_url: !secret base_url
   use_x_forwarded_for: true
   trusted_proxies: !secret trusted_proxies_ip
 
@@ -96,7 +96,7 @@ sonos:
     hosts: !secret sonos_host_ip
 
 # Includes
-group: !include groups.yaml
+#group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
